@@ -1,0 +1,157 @@
+/* DIV AFILIADOS */
+
+#div_afiliados {
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        color: #003366;
+}
+
+.tabla_afiliados {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 3px 3px 3px #88969b;
+}
+
+.tabla_afiliados thead {
+    background: linear-gradient(to bottom, #b6e0f0, #93d6e4);
+    color: #003366;
+}
+
+.tabla_afiliados th, .tabla_afiliados td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #26a6d4;
+}
+
+.tabla_afiliados th {
+    font-weight: bold;
+}
+
+.tabla_afiliados td i {
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #003366;
+}
+
+.tabla_afiliados tbody tr:nth-child(even) {
+    background-color: #d4e7ef;
+}
+
+.tabla_afiliados tbody tr:hover {
+    background-color: #b7dfef;
+}
+
+#div_agregar_afiliados {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+#div_agregar_afiliados p {
+    font-size: 16px;
+    color: #003366;
+    margin-right: 10px;
+}
+
+#div_agregar_afiliados i {
+    font-size: 24px;
+    color: #003366;
+    cursor: pointer;
+}
+
+/* DIV FORM AFILIADOS */
+
+#div_form_afiliados {
+    width: 600px;
+    height: auto;
+    background: linear-gradient(to bottom, #b6e0f0, #93d6e4);
+    border-radius: 15px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #26a6d4;
+    box-shadow: 3px 3px 3px #88969b;
+    box-sizing: border-box;
+    color: #003366;
+    z-index: 10;
+}
+
+.div_titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    color: #003366;
+}
+
+#div_form_afiliados label {
+    font-size: 16px;
+    color: #003366;
+    margin-bottom: 5px;
+    align-self: flex-start;
+    margin-top: 15px;
+}
+
+#div_form_afiliados input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #26a6d4;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 3px #b6e0f0;
+    margin-bottom: 15px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.botonera {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.boton_cancelar, .botones {
+    width: 48%;
+    padding: 10px;
+    text-align: center;
+    background-color: #26a6d4;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #88969b;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton_cancelar:hover, .botones:hover {
+    background-color: #003366;
+}
+
+.boton_cancelar {
+    background-color: #26a6d4;
+}
+
+.boton_cancelar:hover {
+    background-color: #003366;
+}
+
+.botones {
+    background-color: #26a6d4;
+}
+
+.botones:hover {
+    background-color: #003366;
+}

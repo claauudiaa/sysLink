@@ -1,0 +1,164 @@
+#div_modal {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+#div_login {
+    width: 400px;
+    height: 500px;
+    background: linear-gradient(to bottom, #b6e0f0, #93d6e4);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #26a6d4;
+    box-shadow: 3px 3px 3px #88969b;
+    box-sizing: border-box;
+}
+
+.div_titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    color: #003366;
+}
+
+#div_login label {
+    font-size: 16px;
+    color: #003366;
+    margin-bottom: 5px;
+    align-self: flex-start;
+}
+
+#div_login input[type="text"],
+#div_login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #26a6d4;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 3px #b6e0f0;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+#div_login input[type="button"] {
+    width: 50%;
+    padding: 10px;
+    background-color: #26a6d4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #88969b;
+}
+
+#div_login input[type="button"]:hover {
+    cursor: pointer;
+    background-color: #003366;
+}
+
+#cambiar_registro {
+    display: flex;
+    font-size: 16px;
+    color: #003366;
+    justify-content: center;
+}
+
+#cambiar {
+    color: #26a6d4;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#cambiar:hover {
+    text-decoration: underline;
+}
+
+#div_error {
+    margin-top: 10px;
+    color: red;
+    font-size: 16px;
+    text-align: center;
+}
+
+#div_registro {
+    width: 450px;
+    height: 700px;
+    background: linear-gradient(to bottom, #b6e0f0, #93d6e4);
+    border-radius: 15px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #26a6d4;
+    box-shadow: 3px 3px 3px #88969b;
+    box-sizing: border-box;
+}
+
+#div_registro label {
+    font-size: 16px;
+    color: #003366;
+    margin-bottom: 5px;
+    align-self: flex-start;
+}
+
+#div_registro input[type="text"],
+#div_registro input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid  #26a6d4;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 3px #b6e0f0;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+#div_registro input[type="button"] {
+    width: 50%;
+    padding: 10px;
+    background-color: #26a6d4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #88969b;
+}
+
+#div_registro input[type="button"]:hover {
+    background-color: #003366
+}
+
+#cambiar_login {
+    display: flex;
+    font-size: 16px;
+    color: #003366;
+    justify-content: center;
+}
+
+#loguear {
+    color: #26a6d4;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#loguear:hover {
+    text-decoration: underline;
+}
+
+#div_error_registro {
+    margin-top: 10px;
+    color: red;
+    font-size: 16px;
+    text-align: center;
+}

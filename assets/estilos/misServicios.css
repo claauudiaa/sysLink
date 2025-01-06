@@ -1,0 +1,48 @@
+#div_mis_servicios {
+    width: 100%;
+        height: 100%;
+        z-index: 10;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        color: #003366;
+}
+
+.tabla_servicios {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 3px 3px 3px #88969b;
+}
+
+.tabla_servicios thead {
+    background: linear-gradient(to bottom, #b6e0f0, #93d6e4);
+    color: #003366;
+}
+
+.tabla_servicios th, .tabla_servicios td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #26a6d4;
+}
+
+.tabla_servicios th {
+    font-weight: bold;
+}
+
+.tabla_servicios td i {
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #003366;
+}
+
+.tabla_servicios tbody tr:nth-child(even) {
+    background-color: #d4e7ef;
+}
+
+.tabla_servicios tbody tr:hover {
+    background-color: #b7dfef;
+}

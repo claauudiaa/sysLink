@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SysLink</title>
+    <link rel="stylesheet" href="assets/estilos/estilos.css">
+    <link rel="stylesheet" href="assets/estilos/modal.css">
+    <link rel="stylesheet" href="assets/estilos/afiliados.css">
+    <link rel="stylesheet" href="assets/estilos/misServicios.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.4-web/css/all.css">
+    <script src="assets/fontawesome-free-5.15.4-web/js/all.js"></script>
+    <script src="assets/scripts/scripts.js"></script>
+</head>
+
+<body onload="fInicio()">
+    <header>
+        <div id="div_logo">
+            <img src="assets/imagenes/logo.png" alt="Logo SysLink">
+        </div>
+        <div id="div_nombre">
+            SysLink
+        </div>
+    </header>
+    <nav>
+        <div id="btn_login" onclick="fAbrirLogin()">Iniciar sesión</div>
+        <div id="btn_afiliados" onclick="fAfiliados()">Ver afiliados</div>
+        <div id="btn_servicios" onclick="fMisServicios()">Ver mis servicios</div>
+    </nav>
+    <section>
+        <div id="div_modal">
+            <!-- La modal del login y registro -->
+            <div id="div_login">
+                <h3 class="div_titulo">Iniciar Sesión</h3>
+                <label for="login_nombre">Nombre</label>
+                <input type="text" id="login_nombre" placeholder="Ingrese su nombre" value="Claudia">
+                <label for="login_password">Contraseña</label>
+                <input type="password" id="login_password" placeholder="Ingrese su contraseña" value="claudia">
+                <input type="button" value="Ingresar" onclick="fLogin()">
+                <div id="cambiar_registro">
+                    <div>¿No tienes una cuenta? Regístrate&nbsp;</div>
+                    <div id="cambiar" onclick="fAbrirRegistro()">aquí</div>
+                </div>
+                <div id="div_error"></div>
+            </div>
+            <div id="div_registro">
+                <h3 class="div_titulo">Registrarse</h3>
+                <label for="registro_nombre">Nombre</label>
+                <input type="text" id="registro_nombre" placeholder="Ingrese su nombre">
+
+                <label for="registro_apellidos">Apellidos</label>
+                <input type="text" id="registro_apellidos" placeholder="Ingrese sus apellidos">
+
+                <label for="registro_dni">DNI</label>
+                <input type="text" id="registro_dni" placeholder="Ingrese su DNI">
+
+                <label for="registro_domicilio">Domicilio</label>
+                <input type="text" id="registro_domicilio" placeholder="Ingrese su domicilio">
+
+                <label for="registro_password">Contraseña</label>
+                <input type="password" id="registro_password" placeholder="Ingrese su contraseña">
+
+                <label for="registro_rpassword">Repita contraseña</label>
+                <input type="password" id="registro_rpassword" placeholder="Repita su contraseña">
+
+                <input type="button" value="Registrar" onclick="fRegistrar()">
+                <div id="cambiar_login">
+                    <div>¿Tienes una cuenta? Inicia sesión&nbsp;</div>
+                    <div id="loguear" onclick="fAbrirLogin()">aquí</div>
+                </div>
+                <div id="div_error_registro"></div>
+            </div>
+        </div>
+
+        <!-- Este es el contenido principal con el buscador y los servicios -->
+        <div id="div_buscar">
+            <i class="fas fa-search" style="font-size: 24px; color:#003366"></i>
+            <input type="text" id="buscador" placeholder="Buscar servicio">
+        </div>
+        
+        <div id="div_servicios"></div>
+
+        <!-- Esta es la modal de los afiliados -->
+        <div id="div_afiliados"></div>
+
+        <!-- Esto es una modal de confirmación de acciones -->
+        <div id="div_confirmacion">
+            <div>¿Está seguro de realizar esta acción?</div>
+            <input type="button" value="Cancelar">
+            <input type="button" value="Confirmar">
+        </div>
+
+        <div id="div_form_afiliados">
+            <input type="hidden" id="afiliado_id">
+
+            <label for="afiliado_nombre">Nombre</label>
+            <input type="text" id="afiliado_nombre" placeholder="Ingrese nombre del afiliado">
+
+            <label for="afiliado_apellidos">Apellidos</label>
+            <input type="text" id="afiliado_apellidos" placeholder="Ingrese apellidos del afiliado">
+
+            <label for="afiliado_provincia">Provincia</label>
+            <input type="text" id="afiliado_provincia" placeholder="Ingrese provincia del afiliado">
+
+            <label for="afiliado_servicio">Servicio</label>
+            <input type="text" id="afiliado_servicio" placeholder="Ingrese servicio del afiliado">
+
+            <div class="botonera">
+                <div onclick="fOcultarForm()" class="boton_cancelar">Cancelar</div>
+                <div id="afiliado_A" onclick="fCRUDAfiliados('a')" class="botones">Añadir</div>
+                <div id="afiliado_M" onclick="fCRUDAfiliados('m')" class="botones">Modificar</div>
+                <div id="afiliado_B" onclick="fCRUDAfiliados('b')" class="botones">Borrar</div>
+            </div>
+        </div>
+        <div id="div_mis_servicios"></div>
+    </section>
+    <footer>&copy;2025 SysLink</footer>
+</body>
+
+</html>
